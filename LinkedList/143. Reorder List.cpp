@@ -8,6 +8,12 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+/*
+     -------------- Special Condition ----------------
+     when number of element of linked list is odd then 
+       always : size of reverse LL < size of straight LL
+*/
 class Solution {
 public:
     
