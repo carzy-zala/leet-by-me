@@ -32,6 +32,7 @@ Every day, we will have two choices, either to do nothing and move to the next d
 Recursive Solution:
 Approach:(Recursion)
 Step 1:
+
 Express the problem in terms of indexes.
 We need to think in the terms of the number of days, therefore one variable will be the array index( say ind).
 Next, we need to keep in mind the condition that we can’t buy a stock again, that is we need to first sell a stock, and then we can buy that again. Therefore we need a second variable ‘buy’ which tells us on a particular day whether we can buy or sell the stock.
