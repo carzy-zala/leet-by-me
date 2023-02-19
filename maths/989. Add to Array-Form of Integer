@@ -1,0 +1,30 @@
+class Solution {
+public:
+    vector<int> addToArrayForm(vector<int>& num, int k) {
+        int carry=0;
+        int i=num.size()-1;
+        while(i>=0){
+             int val=num[i];
+             if(carry){
+                 val = val + carry;
+             }
+             if(k){
+                 val = val + (k%10);
+             }
+
+             num[i] = val%10;
+             carry = val/10;
+             k=k/10;
+             i--;
+        }
+
+        while(carry || k){
+            int val = carry + (k%10);
+            num.insert(num.begin(),val%10);
+            carry=val/10;
+            k/=10;
+        } 
+         
+        return num;
+    }
+};
